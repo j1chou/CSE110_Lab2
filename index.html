@@ -1,0 +1,225 @@
+<html>
+
+<head>
+    <title>Josh Chou's homepage but in HTML</title>
+    <meta name="author" content="Josh Chou">
+    <link rel="stylesheet" href="style.css">  <!-- I don't have a style.css lol-->
+</head>
+
+<body>
+<header>
+    <h1>[h1]This is header</h1>
+    <h2>[h2]This is a header but smaller</h2>
+    <h3>[h3]This is a header but even smaller</h3>
+</header>
+
+<nav class="menu">
+    <ol>
+        <li class="menu"><a href="https://j1chou.github.io/">[nav]Josh's Homepage</a></li>
+        <li class="menu"><a href="https://j1chou.github.io/markdown">Markdown demo</a></li>
+        <li class="menu">HTML demo</li>
+    </ol>
+</nav>
+<hr>
+
+<div>
+<label for="class-select">[option]Choose a class:</label>
+    <select id="class-select">
+        <option value="">--Please choose an option--</option>
+        <optgroup label = "CSE classes">
+            <option value="CSE 100">CSE 100</option>
+            <option value="CSE 105">CSE 105</option>
+            <option value="CSE 110">CSE 110</option>
+        </optgroup>
+    </select>
+</div>
+<hr>
+<div>
+    <table>
+        <caption>[table]Apples and Oranges</caption>
+        <colgroup>
+            <col>
+            <col span="2" class="Apples">
+            <col span="2" class="Oranges">
+        </colgroup>
+        <tr>
+            <td> </td>
+            <th scope="col" class="Apples">Apple</th>
+            <th scope="col" class="Oranges">Orange</th>
+        </tr>
+        <tr>
+            <th scope="row">Color</th>
+            <td>Red</td>
+            <td>Orange</td>
+        </tr>
+    </table>
+</div>
+
+<ul>
+    <li>This is an unordered list</li>
+    <li>Unordered list</li>
+        <ol>
+            <li>Ordered list 1</li>
+            <li>Ordered list 2</li>
+        </ol>
+    </li>
+</ul>
+<hr> 
+<figure>
+    <img src="https://puu.sh/H6lZU/339364b924.png"
+         alt="A place of great suffering">
+    <figcaption>[figcaption] A place of great suffering</figcaption>
+    <audio
+        controls
+        src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
+<section>
+    <p>	[section] A wand of <strong>demonic enigmas</strong>, cloaked in darkness and <em>crackling</em> with dark enchantments.</p>
+    <details>
+        <summary>Details</summary>
+        This is a flavor text from a game I play too much
+    </details>
+</section>
+
+
+<p>    
+    <h2>Poem break</h2> <br>
+    Knox in box.<br>
+    <pre>Fox  in   socks.</pre> <br>
+    <code>Knox on fox in socks in box.</code>
+</p>
+
+<main> 
+    <p>
+        [main] 
+        <details>
+            <summary>A superlative bow of <b>sunsteel and diamondwire,</b> created by a <i>secretive</i> race of <span class ="aliens">star-dwelling entities</span></summary>
+            Bow of Mystical Energy
+        </details>
+    </p>
+
+<hr>
+    <picture>
+        <source srcset="https://puu.sh/H6m93/8108332fb3.png"
+                media="(min-width: 800px)">
+        <img src="https://puu.sh/H6lZU/339364b924.png" alt="" />
+    </picture>
+    
+    <iframe 
+    src="https://students.ucsd.edu/academics/enroll/index.html" title="webReg UCSD">
+    </iframe>
+
+    <video controls width="250">
+
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+
+<div>
+    <p>This is a canvas that's drawing a circle</p>
+    <canvas id="sampleCanvas" width="200" height="200"></canvas>
+    <script>
+        var c = document.getElementById("sampleCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+</div>
+<div>
+    <p>this a svg tag that's drawing a circle</p>
+    <svg width="100" height="100">
+        <circle cx="40" cy="50" r="40" stroke="red" stroke-width="2" fill="blue" />
+      </svg>
+</div>
+<hr>
+<form action="" method="get" class="form-example">
+    <fieldset>
+    <legend>Make a cool username</legend>
+    <div class="form-example">
+      <label for="username">Enter your username: </label>
+      <input type="text" name="username" id="username" required>
+    </div>
+    <div class="form-example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+        <label for="number">Enter your favorite number: </label>
+        <input type="number" name="number" id="number" required>
+      </div>
+    <div class="form-example">
+        <label for="password">Enter a password: </label>
+        <input type="password" name="pass" id="pass" required>
+    </div>
+    <div class="form-example">
+        <label for="url">Enter your favorite website: </label>
+        <input type="url" name="site" id="site" required>
+    </div>
+    <div class="form-example">
+        <label for="tel">Enter your phone number: </label>
+        <input type="tel" name="phone" id="phone" required>
+    </div>
+    <div class="form-example">
+        <label for="checkbox">Do you like checking boxes? </label>
+        <input type="checkbox" name="Yes" id="check" required>
+    </div>
+    <div>
+        <label for="2020">Pick a day in 2020:</label>
+        <input type="date" id="start" name="start"
+               min="2020-01-01" max="2020-12-31">
+    </div>
+    <div>
+        <label for="month">Pick a month:</label>
+        <input type="month" id="start" name="start"
+               min="2020-01" max="2020-12">
+    </div>
+    <textarea id="story" name="story"
+          rows="5" cols="33">
+Tell us about your favorite color
+    </textarea>
+    <div> <label for="Milk-Shake-choice">Choose a flavor:</label>
+        <input list="Milk-Shake-flavors" id="Milk-Shake-choice" name="Milk-Shake-choice" />
+        <datalist id="Milk-Shake-flavors">
+            <option value="Chocolate">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist> 
+    </div>
+
+    <div class="form-example">
+      <input type="submit" value="Sign up">
+    </div> 
+    </fieldset>
+</form>
+
+<div>
+    <button onclick="showContent()">Press for dopamine</button>
+
+    <template>
+    <h2>White Bag</h2>
+    <img src="https://puu.sh/H6ncQ/85771e20ee.png" >
+    </template>
+
+    <script>
+    function showContent() {
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+    }
+    </script>
+</div>
+
+</body>
+
+</main>
+
+<footer>
+    <p>© powered by stress and expectations</p>
+</footer>
+
+</html>
